@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es6",                         
+    "module": "commonjs",                    
+    "outDir": "dist",                     
+    "strict": true,                      
+    "baseUrl": "./",                      
+    "esModuleInterop": true,                
+    "skipLibCheck": true,                   
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@server": [
+        "src/server"
+      ],
+	  "@types": [
+		"src/@types"
+	  ],
+	  "@products" : [
+	    "src/products"
+	  ],
+    },
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+}

@@ -1,0 +1,5 @@
+{
+  "watch": ["tests"],
+  "ext": "test.ts",
+  "exec": "mocha --timeout 10000 -r ts-node/register -r tsconfig-paths/register 'tests/*.test.ts'"
+}
