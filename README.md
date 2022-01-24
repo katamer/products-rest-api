@@ -9,6 +9,7 @@ Main technologies used in project are:
 - TypeScript
 
 Libraries used for testing:
+
 - Mocha
 - Chai
 
@@ -57,4 +58,3 @@ To run tests you should run in main repo folder the following command:
 ```
 yarn test:dev
 ```
-
