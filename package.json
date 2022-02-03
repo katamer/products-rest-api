@@ -13,11 +13,13 @@
     "@shared": "dist/shared",
     "@server": "dist/server",
     "@types": "dist/@types",
-    "@products": "dist/products"
+    "@products": "dist/products",
+    "@constants": "dist/constants"
   },
   "lint-staged": {
     "*.+(ts)": [
       "eslint --fix",
+      "prettier --write .",
       "git add"
     ]
   },

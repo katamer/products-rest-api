@@ -4,6 +4,7 @@ import { Product, RequestQuery } from "@types";
 import createError from "http-errors";
 import enhanceWithData from "./enhanceWithData";
 import { currencyData, ratingData } from "./enhancingData";
+import { servicesUrls } from "@constants";
 
 const getProducts = async (req: Request, res: Response, next: NextFunction) => {
   if (!req.query.toCurrency) {
@@ -12,11 +13,8 @@ const getProducts = async (req: Request, res: Response, next: NextFunction) => {
 
   const toCurrency = (req.query as RequestQuery).toCurrency as string;
 
-  const productsApiUrl =
-    "https://bojwbhw97e.execute-api.us-east-2.amazonaws.com/Production/eshop-challenge/products";
-
   try {
-    const response = await axios(productsApiUrl);
+    const response = await axios(servicesUrls.PRODUCTS_API_URL);
 
     if (!(response.data.body && Array.isArray(response.data.body))) {
       next(createError(500, "Incorrect API response"));
