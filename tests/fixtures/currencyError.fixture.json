@@ -1,0 +1,17 @@
+{
+  "statusCode": 400,
+  "body": [
+    {
+      "npkId": "HD9650/90",
+      "productId": 668620,
+      "url": "www.whiteaway.com/koekkenudstyr/madlavning-grill/frituregryde/product/philips-hd9650-90",
+      "name": "Philips HD9650/90 XXL Air Fry",
+      "brand": "Philips",
+      "image": "https://images.wagcdn.com/500/500/fill/p/prod_auto/frituregryde/hd9650-90.jpg",
+      "price": 653
+    }
+  ],
+  "headers": {
+    "Access-Control-Allow-Origin": "*"
+  }
+}

@@ -1,4 +1,4 @@
-export interface IProduct {
+export interface Product {
   npkId: string;
   productId: number;
   url: string;
@@ -10,4 +10,10 @@ export interface IProduct {
   currency?: string;
 }
 
-export type ReqQuery = { toCurrency?: string };
+export type RequestQuery = { toCurrency?: string };
+
+export interface enhancingData {
+  baseURL: string;
+  path: string;
+  type: "currency" | "rating";
+}

@@ -1,5 +1,5 @@
 import fs from "fs-extra";
-import Logger from "jet-logger";
+import logger from "jet-logger";
 import childProcess from "child_process";
 
 const logger = new Logger();
